@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floral</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		header{
+			position: fixed;
+			height: 100px;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-image: url(fl2.jpg);
+			display: inline-block;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+		#logo {
+			font-size: 50px;
+			line-height: 1px;
+			letter-spacing: 1px;
+			font-family: pacifico;
+			font-weight: normal;
+			padding:5px;
+		}
+		footer {
+			background-color: #f8bbd0;
+			width: 100%;
+			height: 400px;
+			position: absolute;
+			left: 0;
+			top: 7200px;
+		}
+		#Aboutus {
+			background-color: white; 
+			width: 100%;
+			height: 400px;
+			left: 5;
+			top: 6810px;
+			position: absolute;
+			font-size: 20px;
+		}
+        #div1 {
+         	height: 100px;
+        }
+        #div2 { 
+        	height: 400px;
+        	background-color: #ffd5d0;
+        	position: absolute;
+        	left: 0;
+        	top: 140px;
+        	bottom: 0;
+        	width: 100%;
+        }
+        #head2 {
+        	background-color: #f8bbd0;
+        	height: 40px;
+        	width: 100%;
+        	position: fixed;
+        	top: 100px;
+        }
+        .ul1 {
+        	list-style-type: none;
+        	float: right;
+        	margin: 3px;
+        }
+        .li1 {
+        	display: block;
+        	float: left;
+        	font-size: 18px;
+        	font-weight: bold;
+        	margin-right: 25px;
+        	padding: 6px;
+        	font-family: 'Dosis', sans-serif;
+        }
+        .li1:hover {
+           	height: 20px;
+        	box-shadow: 0 0 5px 5px white;
+        }
+        .li1 a {
+        	text-decoration: none;
+        	color: black;
+        }
+        .img1 {
+        	margin-top: 10px;
+        	width: 50%;
+        	height: 390px;   
+        }
+        #div3 {
+        	background-color: white;
+        	height: 460px;
+        	position: absolute;
+        	left: 0;
+        	top: 540px;
+        	width: 100%;
+        	bottom: 0;
+        }
+        .sec31 {
+        	width: 30%;
+        	height: 400px;
+        	margin: 15px 24px;
+        	background-image: url(fl6.jpg) 200px 300px;
+        	float: left;
+        }
+        .sec31 img {
+        	width: 85%;
+        	height: 95%;
+        	padding: auto;
+        	margin-top: 8px;
+        	border: 3px solid black;
+        	border-radius: 10px;
+        }
+        #h31 {
+        	text-align: center;
+        	font-family: 'Dosis', sans-serif;
+        	font-size: 30px;
+        	margin: 0px auto;
+     		padding: 0px;
+        }
+        #div4 {
+        	width: 100%;
+        	height: 390px;
+        	position: absolute;
+        	left: 0;
+        	top: 1010px;
+        	background-color: beige;
+        }
+        .sec41 {
+        	width: 45%;
+        	height: 390px;
+        	float: left;
+        	display: inline-block;
+        }
+        .sec41 img {
+        	width: 850px;
+        	height: 450px;
+        	padding-bottom: 20px;
+        }
+        .sec42 {
+        	width: 19%;
+        	height: 390px;
+        	display: block;
+        }
+        .btn1 {
+        	display: block;
+        	text-align: center;
+        	font-family: 'Dosis', sans-serif;
+        	font-size: 20px;
+        	margin: 26px 30px;
+        	padding: 10px;
+        	background-color: #8bc34a;
+        	color: white;
+        	border: none;
+        	width: 50%;
+        	border-radius: 3px;
+        	outline: none;
+        	transition: all 0.35s;
+        	cursor: pointer;
+        	position: relative;
+        	z-index: 2;
+        }
+        .btn1:hover {
+        	z-index: 0.6;
+        	transition: 0.5s ease-in-out;
+        	color: black;
+        }
+		.btn1:after{
+		  position: absolute;
+		  content: "";
+		  top: 0;
+		  left: 0;
+		  width: 0;
+		  height: 100%;
+		  background-color: #e6ee9c;
+		  border-radius:3px;
+		  transition: all .35s;
+		}
+		.btn1 span {
+			position: relative;
+			z-index: 1;
+		}
+		.btn1:hover:after{
+		  width: 100%;
+		}
+        
+        .sec43 {
+        	width: 36%;
+        	height: 390px;
+        	display: inline-block;
+        }
+        .sec43 img {
+        	width: 100%;
+        	height: 390px;
+        }
+        #div5 {
+        	width: 100%;
+        	height: 450px;
+        	position: absolute;
+        	left: 0;
+        	
+        }
+        .sec51,.sec52,.sec53,.sec54 {
+        	width: 24.7%;
+        	height: 350px;
+        	float: left;
+        	margin: 2px 2px;
+        }
+        .sec51:hover,.sec52:hover,.sec53:hover,.sec54:hover {
+        	background-color: white;
+        	opacity: 0.4;
+        	transition-duration: 1s;
+        }
+        #div5 img {
+        	width: 90%;
+        	height: 350px;
+        	padding: auto;
+        	margin-top: 8px;
+        	border: 2px solid black;
+        	border-radius: 10px;
+        }
+        #s1 {
+        	font-size: 30px;
+        	color: black;
+        	text-align: center;
+        	font-family: 'Dosis', sans-serif;
+        	border-bottom: 1px solid grey;
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+        }
+        #div10 {
+        	background-color: #ffd5d0;
+        	position: absolute;
+        	top: 3670px;
+        	left: 0;
+        	width: 100%;
+        	height: 390px;
+        }
+        #div11 {
+        	width: 100%;
+        	height: 390px;
+        	position: absolute;
+        	left: 0;
+        	top: 4110px;
+        	
+        }
+		#heart img, #heart2 img{
+		  	position:absolute;
+		  	-webkit-transition: opacity 10s ease-in-out;
+		  	-moz-transition: opacity 10s ease-in-out;
+		  	-o-transition: opacity 10s ease-in-out;
+		  	transition: opacity 10s ease-in-out;
+			margin-top: 115px;
+		}
+		  #heart img {
+		  	left:30;
+		  	right:0;
+		  }
+		 @keyframes heartFadeInOut {
+			0% {
+			  opacity:1;
+			}
+			14% {
+			  opacity:0.8;
+			}
+			28% {
+			  opacity:0.6;
+			}
+			42% {
+			  opacity:0.4;
+			}
+			70% {
+			 opacity:0;
+			}
+		}
+		#heart,#heart2 {
+			padding: 0;
+		}
+		#heart2 img{
+			right: 0;
+			left: 0;
+			float: left;
+		}
+		#heart img.top,#heart2 img.top { 
+			animation-name: heartFadeInOut; 
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-duration: 3s;
+			animation-direction: alternate;
+		}
+		#img2 {
+			width: 350px;
+			height: 220px;
+			float: left;
+			margin-left: 37.5%;
+			margin-top: 71px;
+		}
+		.divin1 {
+			width: 30%;
+		}
+		.sec11_1 {
+        	width: 45%;
+        	height: 390px;
+        	float: right;
+        	display: inline-block;
+        }
+        .sec11_1 img {
+        	width: 700px;
+        	height: 450px;
+        	padding-bottom: 20px;
+        }
+        .a{
+		font-size: 30px;
+		font-color: #48C9B0;
+		}
+		.map{
+			height: 300px;
+			width: 300px;
+			margin-left: 300px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.b{
+			float: left;
+		}
+		.c{
+			margin-left: 100px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.space{
+			margin-left: 20px;
+			text-align: center;
+		}
+		.left{		
+			word-spacing: 1cm;
+		}
+
+	</style>
+	<script type="text/javascript">
+		
+		function myBday() {
+			location.href="#red1";
+		}
+		function myAnni() {
+			location.href="#red2";
+		}
+		function myThanks() {
+			location.href="#red3";
+		}
+		function myCongo() {
+			location.href="#red4";
+		}
+		function myFun() {
+			location.href="#red5";
+		}
+		function myRose(){
+			location.href="#rose";
+		}
+		function myTulips(){
+			location.href="#tulip";
+		}
+		function myLilies(){
+			location.href="#lily";
+		}
+		function mySunflower(){
+			location.href="#sunflower";
+		}
+		function myOrchids(){
+			location.href="#orchid";
+		}
+	</script>
+	
+	</head>
+<body>
+<header>
+	<h3 id="logo">Floral</h3>
+	<section id="head2">
+		<ul class="ul1">
+			<li class="li1"><a href="#div1">Home</a></li>
+			<li class="li1"><a href="#red6">Occasions</a></li>
+			<li class="li1"><a href="#red7">Flowers</a></li>
+			<li class="li1"><a href="#abtus">About Us</a></li>
+			<li class="li1"><a href="#ctxus">Contact Us</a></li>
+		</ul>	
+	</section>
+</header>
+
+<div id="div1"></div>	
+
+<div id="div2">
+	<center><img src="fl35.jpg" class="img1"></center>
+</div>
+<center>
+<div id="div3">
+	<div class="sec31">
+		<img src="fl7.png">
+		<h3 id="h31">TAKE IT</h3>
+	</div>
+	<div class="sec31">
+		<img src="fl8.png">
+		<h3 id="h31">GIVE IT</h3>
+	</div>
+	<div class="sec31"  id="red6">
+		<img src="fl9.jpg">
+		<h3 id="h31">FEEL IT</h3>
+	</div>
+</div>
+
+</center>
+<div id="div4">
+	<div class="sec41">
+		<img src="fl10.png">
+	</div>
+	<div class="sec42" style="float: left;">
+		<center>
+		<button class="btn1" onclick="myBday()"><span>Birthdays</span></button>
+		<button class="btn1" onclick="myAnni()"><span>Anniversary</span></button>
+		<button class="btn1" onclick="myThanks()"><span>Thanks Giving</span></button>
+		<button class="btn1" onclick="myCongo()"><span>Congratulate</span></button>
+		<button class="btn1" onclick="myFun()"><span>Funeral</span></button>
+		</center>	
+	</div>
+	<div class="sec43" id="red1">
+		<img src="fl12.jpg">
+	</div>
+</div>
+<div id="div5" style="top: 1400px;">
+	<center>
+		<h3 id="s1">Birthdays</h3>
+		<div class="sec51">
+		<img src="fl13.jfif">
+		</div>
+		<div class="sec52">
+			<img src="fl14.jfif">
+		</div>
+		<div class="sec53">
+			<img src="fl15.jfif">
+		</div>
+		<div class="sec54" id="red2">
+			<img src="fl16.jfif">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 1830px;">
+	<center>
+		<br>
+		<h3 id="s1">Anniversary</h3>
+		<div class="sec51">
+		<img src="fl19.jpg">
+		</div>
+		<div class="sec52">
+			<img src="fl22.jpg">
+		</div>
+		<div class="sec53">
+			<img src="fl21.jpg">
+		</div>
+		<div class="sec54" id="red3">
+			<img src="fl20.jpg">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 2280px;">
+	<center>
+		<br>
+		<h3 id="s1">Thanks Giving</h3>
+		<div class="sec51">
+		<img src="fl23.jpg">
+		</div>
+		<div class="sec52">
+			<img src="fl24.jpg">
+		</div>
+		<div class="sec53">
+			<img src="fl25.jpg">
+		</div>
+		<div class="sec54" id="red4">
+			<img src="fl26.jpg">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 2730px;">
+	<center>
+		<br>
+		<h3 id="s1">Congratulate</h3>
+		<div class="sec51">
+		<img src="fl27.jfif">
+		</div>
+		<div class="sec52">
+			<img src="fl28.jfif">
+		</div>
+		<div class="sec53">
+			<img src="fl30.jfif">
+		</div>
+		<div class="sec54" id="red5">
+			<img src="fl29.jfif">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 3180px;">
+	<center>
+		<br>
+		<h3 id="s1">Funeral</h3>
+		<div class="sec51">
+		<img src="fl31.jpg">
+		</div>
+		<div class="sec52">
+			<img src="fl33.jpg">
+		</div>
+		<div class="sec53">
+			<img src="fl32.jpg">
+		</div>
+		<div class="sec54">
+			<img src="fl34.jpg">
+		</div>
+	</center>
+</div>
+<div id="div10">
+	<center><div id="heart2" class="divin1">
+  		<img class="top" src="gif1.gif" width="140px">
+	</div>
+	<img src="fl37.jpg" id="img2">
+	<div id="heart" width="30%" class="divin1">
+  		<img class="top" src="gif1.gif" width="140px">
+	</div>
+	<div id="red7"></div>
+	</center>
+</div>
+
+<div id="div11">
+	<div class="sec11_1" >
+		<img src="flower1.jpg">
+	</div>
+	<div class="sec42" style="float: right;">
+		<center>	
+			<button class="btn1" onclick="myRose()"><span>Rose</span></button>
+			<button class="btn1" onclick="myTulips()"><span>Tulips</span></button>
+			<button class="btn1" onclick="myLilies()"><span>Lilies</span></button>
+			<button class="btn1" onclick="mySunflower()"><span>Sunflowers</span></button>
+			<button class="btn1" onclick="myOrchids()"><span>Orchids</span></button>
+		</center>	
+	</div>
+	<div class="sec43" id="rose">
+		<img src="f1.png">
+	</div>
+</div>
+<div id="div5" style="top: 4560px;">
+	<center>
+		<h3 id="s1">Rose</h3>
+		<div class="sec51">
+		<img src="rose1.jpg">
+		</div>
+		<div class="sec52">
+			<img src="rose2.jpg">
+		</div>
+		<div class="sec53">
+			<img src="rose3.jpg">
+		</div>
+		<div class="sec54" id="tulip">
+			<img src="rose4.jpg">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 5010px;">
+	<center>
+		<h3 id="s1">Tulips</h3>
+		<div class="sec51">
+		<img src="tulip1.jpg">
+		</div>
+		<div class="sec52">
+			<img src="tulip2.jpg">
+		</div>
+		<div class="sec53">
+			<img src="tulip3.jpg">
+		</div>
+		<div class="sec54" id="lily">
+			<img src="tulip4.jpg">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 5460px;">
+	<center>
+		<h3 id="s1">Lilies</h3>
+		<div class="sec51">
+		<img src="lily1.jpg">
+		</div>
+		<div class="sec52">
+			<img src="lily2.jpg">
+		</div>
+		<div class="sec53">
+			<img src="lily3.jpg">
+		</div>
+		<div class="sec54" id="sunflower">
+			<img src="lily4.jpg">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 5910px;">
+	<center>
+		<h3 id="s1">Sunflowers</h3>
+		<div class="sec51">
+		<img src="sf1.jpg">
+		</div>
+		<div class="sec52">
+			<img src="sf2.jpg">
+		</div>
+		<div class="sec53">
+			<img src="sf3.jpg">
+		</div>
+		<div class="sec54" id="orchid">
+			<img src="sf4.jpg">
+		</div>
+	</center>
+</div>
+<div id="div5" style="top: 6360px;">
+	<center>
+		<h3 id="s1">Orchids</h3>
+		<div class="sec51">
+		<img src="or1.jpg">
+		</div>
+		<div class="sec52">
+			<img src="or2.jpg">
+		</div>
+		<div class="sec53">
+			<img src="or3.jpg">
+		</div>
+		<div class="sec54" id="abtus">
+			<img src="or4.jpg">
+		</div>
+	</center>
+</div>
+
+	<div id="Aboutus">
+	
+		<h2>Fresh Flowers from Our Fields..</h2>
+		
+		<div><p>Flowers and plants are always a great gift for those you hold dear, or even yourself. Whether you’re shopping for birthday 	flowers for your mom or you want to surprise your husband at the office with a lush bonsai plant, we’ve got you covered. Browse indoor plants perfect for the hard-working college student, bountiful bouquets filled to bursting with magnificent blooms, and designer floral arrangements you can’t find elsewhere. Complement your gourmet gift with some gorgeous blooms to sweeten the surprise. Send flowers today and brighten the week of a friend, family member, or special someone.</p>	
+		</div>
+		
+		<h2>The Perfect Gifts and Flowers, Whether It's a Special Day or Any Day</h2>
+		<div>
+		<p>Our birthday flowers can be customized with the vase of your choice or paired with a sweet treat to match the recipient's style. From romantic displays of red roses to stargazer lilies, send flowers to bring a smile to someone’s face for any and every reason.Your significant other will swoon when they receive our romantic anniversary flowers and gifts, curated with love by our expert team. And, we're here to support your gifting needs even when the occasion isn't a joyful one. Our sympathy flowers and gifts are tastefully arranged and hand-delivered with care to help you express your deepest condolences during a sensitive time. Each and every gift is designed to help you send the right message. And fortunately, our online flowers are easy to order!</p>
+		</div>
+		<div id="ctxus"></div>
+	
+	</div>
+<footer>
+	<div>
+		<div class="b">
+			<a href="https://www.google.com/maps/place/Charotar+University+of+Science+and+Technology+(CHARUSAT)/@22.599589,72.8183113,17z/data=!3m1!4b1!4m5!3m4!1s0x395e50c43cdea6c7:0x5074fe9e0c1c8bd!8m2!3d22.599589!4d72.8205"><img src="map.jpeg" class="map"></a>
+		</div>
+		<div class="b">
+			<div class="c">
+			<h3>Contact:</h3>
+			<table>
+				<tr>
+					<td>
+						<i style="font-size:34px;color: #85929E" class="fa">&#xf10b;</i>
+					</td>
+					<td>
+						<a href="tel:8758028405" class="space" style="font-size:20px"> 87580 28405 </a>
+						<a href="tel:3427776960" class="space" style="font-size:20px"> 94277 76960 </a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<i style="font-size:25px;color: #85929E" class="fa">&#xf0e0;</i>
+					</td>
+					<td>
+						<a href="https://www.google.com/intl/en-GB/gmail/about/#" class="space">EMAIL</a>
+					</td>
+				</tr>
+			</table><br><br>
+			
+			<h3>Connect:</h3>
+				<div class="left">
+					<a href="https://www.facebook.com/"><i style="font-size:25px;color: #85929E" class="fa">&#xf09a;</i></a>
+					<a href="https://www.instagram.com/accounts/login/?hl=en"><i style="font-size:25px;color: #85929E" class="fa">&#xf16d;</i></a>
+					<a href="https://twitter.com/login"><i style="font-size:25px;color: #85929E" class="fa">&#xf099;</i></a>
+					<a href="https://www.youtube.com/"><i style="font-size:25px;color: #85929E" class="fa">&#xf167;</i></a>
+					<a href="https://in.pinterest.com/login/"><i style="font-size:25px;color: #85929E" class="fa">&#xf0d2;</i></a> 
+				</div>
+			</div>
+		</div>
+				
+	</div>
+	<div><p width="100px"></p></div>
+</footer>
+
+</body>
+</html>
